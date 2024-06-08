@@ -14,7 +14,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
   box-sizing: border-box; }
 
 .column, .columns {
@@ -98,7 +98,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1em; /*1.8*/
+  font-size: 1.8em; 
   line-height: 1.8;
   font-weight: 400;
   font-family: "Libre Baskerville", Helvetica, Arial, serif;
