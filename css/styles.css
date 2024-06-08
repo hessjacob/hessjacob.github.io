@@ -258,13 +258,13 @@ input[type="submit"].button-primary, input[type="reset"].button-primary, input[t
 
 .button.button-primary:hover, button.button-primary:hover {
   color: #fff;
-  background-color: #7C112F; /*#f30b4b;*/
-  border-color: #7C112F; /*#f30b4b;*/ }
+  background-color: #CB4335; /*#f30b4b;*/
+  border-color: #CB4335; /*#f30b4b;*/ }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #7C112F; /*#f30b4b;*/
-  border-color: #7C112F; /*#f30b4b;*/ }
+  background-color: #CB4335; /*#f30b4b;*/
+  border-color: #CB4335; /*#f30b4b;*/ }
 
 .button.button-primary:focus, button.button-primary:focus {
   color: #fff;
@@ -810,7 +810,7 @@ Navbar
         -moz-transition: .5s all;
         transition: .5s all; }
         .nav ul li a:hover {
-          color: #F5235D; /*#F5235D;*/
+          color: #CB4335; /*#F5235D;*/
           -webkit-transition: .5s all;
           -o-transition: .5s all;
           -moz-transition: .5s all;
