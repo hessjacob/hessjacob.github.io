@@ -103,7 +103,7 @@ body {
   font-weight: 400;
   font-family: "Libre Baskerville", Helvetica, Arial, serif;
   color: #222;
-  transform: scale(50%);
+  zoom: 50%;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6 {
