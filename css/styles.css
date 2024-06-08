@@ -258,8 +258,8 @@ input[type="submit"].button-primary, input[type="reset"].button-primary, input[t
 
 .button.button-primary:hover, button.button-primary:hover {
   color: #fff;
-  background-color: #f30b4b;
-  border-color: #f30b4b; }
+  background-color: #7C112F; /*#f30b4b;*/
+  border-color: #7C112F; /*#f30b4b;*/ }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
