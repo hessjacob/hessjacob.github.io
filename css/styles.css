@@ -810,7 +810,7 @@ Navbar
         -moz-transition: .5s all;
         transition: .5s all; }
         .nav ul li a:hover {
-          color: #CB4335; /*#F5235D;*/
+          color: #F5235D; /*#F5235D;*/
           -webkit-transition: .5s all;
           -o-transition: .5s all;
           -moz-transition: .5s all;
