@@ -761,14 +761,14 @@ Header
       -moz-transition: .5s all;
       transition: .5s all; }
       .header .logo a:hover {
-        color: #222; /*#F5235D;*/
+        color: #7C112F; /*#F5235D;*/
         -webkit-transition: .5s all;
         -o-transition: .5s all;
         -moz-transition: .5s all;
         transition: .5s all; }
         .header .logo a:hover h1:after {
           border-bottom: 4px solid;
-          border-bottom-color: #222; /*#F5235D;*/
+          border-bottom-color: #7C112F; /*#F5235D;*/
           -webkit-transition: .5s all;
           -o-transition: .5s all;
           -moz-transition: .5s all;
