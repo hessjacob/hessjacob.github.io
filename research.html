@@ -148,7 +148,7 @@
 					
 				<div>
                     <a class="button button-primary" href="#">PDF</a>
-                    <a class="button button-primary" href="#">Abstract</a>
+                   <a class="button button-primary" href="#" id="abstract1-btn">Abstract</a>
                 </div>
 
                 <div id="abstract1" style="display:none;">
@@ -178,15 +178,20 @@
 		</section>
 
 		<script>
-            function toggleAbstract(id) {
-                var abstract = document.getElementById(id);
-                if (abstract.style.display === "none") {
-                    abstract.style.display = "block";
-                } else {
-                    abstract.style.display = "none";
-                }
-            }
-        </script>
+  document.getElementById('abstract1-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    toggleAbstract('abstract1');
+  });
+
+  function toggleAbstract(id) {
+    var abstractElement = document.getElementById(id);
+    if (abstractElement.style.display === 'none' || abstractElement.style.display === '') {
+      abstractElement.style.display = 'block';
+    } else {
+      abstractElement.style.display = 'none';
+    }
+  }
+</script>
 
 	</body>
 
