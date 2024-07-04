@@ -156,6 +156,7 @@
   document.getElementById('abstract1-btn').addEventListener('click', function(event) {
     event.preventDefault();
     toggleAbstract('abstract1');
+    this.blur();  // Remove focus from the button
   });
 
   function toggleAbstract(id) {
