@@ -10,25 +10,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Jacob T. Hess</title>
 		<meta name="description" content="">
-
 		<!-- Mobile Specific Metas
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<!-- FONT
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800' rel='stylesheet' type='text/css'>
 	 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
-
 		<!-- CSS
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="stylesheet" href="./css/styles.css">
-
-
 		<!-- Favicon
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="shortcut icon" href="./favicon.ico"/>
-
 		<!-- DEFINES STYLE OF THE PAGE -->
 	
 		    <!-- INDICATIONS FOR SEARCH ROBOTS: INDEX THE PAGE AND FOLLOW THE LINKS -->
@@ -48,7 +42,6 @@
 		    
 	            <!-- Add icon library -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
  <!-- RESPONSIVE IFRAME -->
 	
      <style>
@@ -91,10 +84,8 @@
  
 		
 	</head>
-
 	<body>
 		
-
 		<!-- Header -->
 		<header class="header">
 			<div class="container">
@@ -106,7 +97,6 @@
 				</div>
 			</div>
 		</header>
-
 		<!-- Main Nav -->
 		<section class="container">
 			<nav class="nav">
@@ -125,59 +115,54 @@
 		
  
 		
-
     </section>
-
-
-
-
-
-
-
-
-
  <!-- PAGE CONTENT -->
 		
-
 		<section class="sub-page container">
 		
 			<h3>Working Papers</h3>
 				<hr>
 				
 				<p><b>Multinationals, Intangibles and the Wage Skill Premium in Spain</b> - <i>Job Market Paper</i></p>
-					
+
 				<div>
                     <a class="button button-primary" href="#">PDF</a>
-                  <a class="button button-primary" href="#" id="abstract1-btn">Abstract</a>
+                    <a class="button button-primary" href="#">Abstract</a>
+                   <a class="button button-primary" href="#" id="abstract1-btn">Abstract</a>
                 </div>
 
-                <div id="abstract1" class="abstract-content">
-  <!-- Your abstract content goes here -->
-  <p>This is the abstract content that can be toggled.</p>
-</div>
-
+                <div id="abstract1" style="display:none;">
+                    <p><u>Abstract</u>: </p>
+                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+                </div>
 				<!--<br><br><br>
 			
 				<p><b>Profits, Labor Share and the Rise of Acquired Intangibles</b><br>
 				with Luis Rojas, Raul Santaeulalia-Llopis and Carolina Villegas-Sanchez</p>
 				<a class="button button-primary" href="#">PDF</a>-->
 			 
-
 			
 		</section>
 		<section class="main container", style="padding-top: 1%">
 			<h3>Work In Progress</h3>
 			<hr>
-
 			<p><b>Profits, Labor Share and the Rise of Acquired Intangibles</b><br>
 			with <a href="https://sites.google.com/site/luiserojasweb//">Luis Rojas</a>, <a href="https://r-santaeulalia.net/">Raul Santaeulalia-Llopis</a> and <a href="https://sites.google.com/site/carolinavillegassanchez/home?authuser=0">Carolina Villegas-Sanchez</a></p>
-
 			<br>
 			<p><b>R&D Subsidy Allocation and Selection</b><br>
 			with <a href="https://r-santaeulalia.net/">Raul Santaeulalia-Llopis</a></p>
 		</section>
 
-<script>
+		<script>
+            function toggleAbstract(id) {
+                var abstract = document.getElementById(id);
+                if (abstract.style.display === "none") {
+                    abstract.style.display = "block";
+                } else {
+                    abstract.style.display = "none";
+                }
+            }
+        </script>
   document.getElementById('abstract1-btn').addEventListener('click', function(event) {
     event.preventDefault();
     toggleAbstract('abstract1');
