@@ -81,6 +81,19 @@
 		   margin-right: auto !important;
 		 }  		
     </style>
+		 <script>
+		    document.addEventListener('DOMContentLoaded', function() {
+		        document.querySelectorAll('.abstract-btn').forEach(function(button) {
+		            button.addEventListener('click', function(event) {
+		                event.preventDefault(); // Prevent the default anchor behavior
+		                var abstractContent = button.nextElementSibling;
+		                if (abstractContent && abstractContent.classList.contains('abstract-content')) {
+		                    abstractContent.style.display = abstractContent.style.display === 'none' ? 'block' : 'none';
+		                }
+		            });
+		        });
+		    });
+		</script>
  
 		
 	</head>
