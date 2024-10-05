@@ -250,16 +250,6 @@ input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focu
   background-color: #222; /*#F5235D;*/
   border-color: #222; /*#F5235D;*/ }
 
-document.querySelectorAll('.abstract-btn').forEach(function(button) {
-    button.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        var abstractContent = button.nextElementSibling;
-        if (abstractContent && abstractContent.classList.contains('abstract-content')) {
-            abstractContent.style.display = abstractContent.style.display === 'none' ? 'block' : 'none';
-        }
-    });
-});
-
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
   background-color: #222; /*#F5235D;*/
