@@ -119,6 +119,22 @@
 		
     </section>
  <!-- PAGE CONTENT -->
+
+	<!-- Abstract Button -->
+	<script>
+	    document.querySelectorAll(".abstract-btn").forEach(function(button) {
+	        button.addEventListener("click", function(event) {
+	            event.preventDefault();  // Prevent the default anchor behavior
+	            var targetId = button.getAttribute("data-target");
+	            var abstract = document.getElementById(targetId);
+	            if (abstract.style.display === "none") {
+	                abstract.style.display = "block";
+	            } else {
+	                abstract.style.display = "none";
+	            }
+	        });
+	    });
+	</script>
 		
 		<section class="sub-page container">
 		
@@ -143,6 +159,7 @@
 				
 				<div>
 				    <a class="button button-primary abstract-btn" href="#" data-target="abstract2">Abstract</a>
+				    <!--<a class="button button-primary" href="#">PDF</a>-->
 				</div>
 				
 				<div id="abstract2" class="abstract-content" style="display:none;">
@@ -165,20 +182,6 @@
 		</section>
 
 
-<script>
-    document.querySelectorAll(".abstract-btn").forEach(function(button) {
-        button.addEventListener("click", function(event) {
-            event.preventDefault();  // Prevent the default anchor behavior
-            var targetId = button.getAttribute("data-target");
-            var abstract = document.getElementById(targetId);
-            if (abstract.style.display === "none") {
-                abstract.style.display = "block";
-            } else {
-                abstract.style.display = "none";
-            }
-        });
-    });
-</script>
 
 
 	</body>
