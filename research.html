@@ -151,8 +151,9 @@
 				</div>
 			
 				<p>Presented at: SED 2024, University of Sydney, University of Melbourne, University of Queensland</p>
-
-			with <a href="https://www.xufeng.wang/">Xufeng Wang</a></p>
+			
+				<p><b>The Merger and Acquisition Market and Resource (Mis)allocation</b><br>
+				with <a href="https://www.xufeng.wang/">Xufeng Wang</a></p>
 			 
 			
 		</section>
@@ -164,21 +165,25 @@
 			with <a href="https://r-santaeulalia.net/">Raul Santaeulalia-Llopis</a></p>
 		</section>
 
+<!-- JavaScript code at the end of the body -->
 <script>
-  document.getElementById('abstract1-btn').addEventListener('click', function(event) {
-    event.preventDefault();
-    toggleAbstract('abstract1');
-    this.blur();  // Remove focus from the button
-  });
-
-  function toggleAbstract(id) {
-    var abstractElement = document.getElementById(id);
-    if (abstractElement.style.display === 'none' || abstractElement.style.display === '') {
-      abstractElement.style.display = 'block';
+document.getElementById("abstract1-btn").addEventListener("click", function() {
+    var abstract1 = document.getElementById("abstract1");
+    if (abstract1.style.display === "none") {
+        abstract1.style.display = "block";
     } else {
-      abstractElement.style.display = 'none';
+        abstract1.style.display = "none";
     }
-  }
+});
+
+document.getElementById("abstract2-btn").addEventListener("click", function() {
+    var abstract2 = document.getElementById("abstract2");
+    if (abstract2.style.display === "none") {
+        abstract2.style.display = "block";
+    } else {
+        abstract2.style.display = "none";
+    }
+});
 </script>
 
 
