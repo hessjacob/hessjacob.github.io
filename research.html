@@ -120,21 +120,6 @@
     </section>
  <!-- PAGE CONTENT -->
 
-	<!-- Abstract Button -->
-	<script>
-	    document.querySelectorAll(".abstract-btn").forEach(function(button) {
-	        button.addEventListener("click", function(event) {
-	            event.preventDefault();  // Prevent the default anchor behavior
-	            var targetId = button.getAttribute("data-target");
-	            var abstract = document.getElementById(targetId);
-	            if (abstract.style.display === "none") {
-	                abstract.style.display = "block";
-	            } else {
-	                abstract.style.display = "none";
-	            }
-	        });
-	    });
-	</script>
 		
 		<section class="sub-page container">
 		
@@ -181,7 +166,22 @@
 			with <a href="https://r-santaeulalia.net/">Raul Santaeulalia-Llopis</a></p>
 		</section>
 
-
+		
+<!-- Abstract Button -->
+	<script>
+	    document.querySelectorAll(".abstract-btn").forEach(function(button) {
+	        button.addEventListener("click", function(event) {
+	            event.preventDefault();  // Prevent the default anchor behavior
+	            var targetId = button.getAttribute("data-target");
+	            var abstract = document.getElementById(targetId);
+	            if (abstract.style.display === "none") {
+	                abstract.style.display = "block";
+	            } else {
+	                abstract.style.display = "none";
+	            }
+	        });
+	    });
+	</script>
 
 
 	</body>
